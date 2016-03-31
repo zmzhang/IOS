@@ -1,0 +1,18 @@
+function plotmcs(F,threshMEAN,threshSTD,ID)
+%+++ To plot for the result F obtained from 
+%+++ the outlier detection method: mcs.m
+%+++ Coded by Hongdong Li, lhdcsu@gmail.com
+
+
+if nargin<4;ID=[1:length(F.MEAN)]';end;
+if nargin<3;threshSTD=0;end;
+if nargin<2;threshMEAN=0;end;
+
+MEAN=F.MEAN;
+STD=F.STD;
+N=length(STD);
+h=plot(MEAN,STD,'*');
+set(h(1),'marker','*');
+hold on;
+text(MEAN*1.01,STD,num2str(ID));
+xlabel('MEAN');ylabel('STD');  
