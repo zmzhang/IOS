@@ -11,7 +11,6 @@ To start running this algorithm, load the IsolationForest package through "libra
 commandline windows
 
 ###How to cite:###
-F. T. Liu, K. M. Ting and Z.-H. Zhou, ACM Transactions on Knowledge Discovery from Data (TKDD), 2012, 6, 3.
 
 ### Example ###
 Milk data contains one outlier and IOS can be used to detect it and select representative subset.
