@@ -1,5 +1,6 @@
 ## IOS ##
 a new representative subset selection and outlier detection method **IOS** (**I**solation forest **O**utlier detection and **S**ubset selection) has been proposed.IOS can detect outlier and select representative subset of samples simultaneously without y values and reduce prediction errors significantly compared with KS, SPXY and RS methods. The IForest is implemented in R language. All the chemometric methods including IOS for processing datasets are implemented by our research group in MATLAB language. 
+![IOS](/images/IOS.jpg)
 
 ### installation ###
 ### Install from Local ZIP###
