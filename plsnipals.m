@@ -1,4 +1,4 @@
-function [B,Wstar,T,P,Q,W,R2X,R2Y]=pls_nipals(X,Y,A)
+function [B,Wstar,T,P,Q,W,R2X,R2Y]=plsnipals(X,Y,A)
 %+++ The NIPALS algorithm for both PLS-1 (a single y) and PLS-2 (multiple Y)
 %+++ X: n x p matrix
 %+++ Y: n x m matrix

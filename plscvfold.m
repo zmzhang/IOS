@@ -57,7 +57,7 @@ for group=1:K
     [ys,ypara1,ypara2]=pretreat(ycal,method);   
     
     %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-    [B,W,T,P,Q]=pls_nipals(Xs,ys,A);   % no pretreatment.
+    [B,W,T,P,Q]=plsnipals(Xs,ys,A);   % no pretreatment.
  
     yp=[];
     for j=1:A

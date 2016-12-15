@@ -8,7 +8,7 @@ KSCV=plscvfold(KSXtrain,KSYtrain,15,10,'center',0);
 A1=KSCV.optPC; 
 KSPLS=pls(KSXtrain,KSYtrain,A1,'center');
 KSXtest_expand=[KSXtest ones(size(KSXtest,1),1)];
-coef=KSPLS.coef_origin;
+coef=KSPLS.regcoef_original;
 KSXtestypred=KSXtest_expand*coef(:,end);
 %Performance of calibration and validation sample set
 KSXtestSST_F=sum((KSYtest-mean(KSYtest)).^2);  
@@ -25,7 +25,7 @@ KSXtestypred_test = [KSXtestypred,KSYtest];
 
 
 KSXpred_expand=[Xpred ones(size(Xpred ,1),1)];
-coef=KSPLS.coef_origin;
+coef=KSPLS.regcoef_original;
 KSXpredypred=KSXpred_expand*coef(:,end);
 %Performance of prediction sample set
 KSXpredSST_F=sum((Ypred-mean(Ypred)).^2);  
